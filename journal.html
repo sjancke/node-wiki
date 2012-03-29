@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>node-wiki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+	  
+	  .journal-time {
+		width: 60px;
+		vertical-align: top; 
+		text-align: right;
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: bold;
+		padding-right:5px;
+	  }
+	  .journal-entry {
+		padding-left:10px;
+		border-left: solid 1px;
+	  }
+	   td.journal-entry {
+		padding-bottom: 20px;
+	  }
+    </style>
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="bootstrap/css/font-awesome.css" rel="stylesheet">
+	<link href="sh/styles/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="sh/styles/shCoreDefault.css" rel="stylesheet" type="text/css"/>
+		
+    <link rel="shortcut icon" href="bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">node-wiki</a>
+          <div class="nav-collapse">
+            <!--<ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+            </ul>-->
+			<form class="navbar-search pull-left" action="">
+				<input type="text" class="search-query span2" placeholder="Search">
+			</form>
+            <p class="navbar-text pull-right"><img style="margin-left:5px; margin-right:5px;" src="http://0.gravatar.com/avatar/ef3002e56a08277ffb6b4ef89398144b?s=24&d=identicon&r=G"/><a id="userid" href="#" rel="popover" data-original-title="zero001" data-content="sebastian.jancke@googlemail.com">zero001</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span9">
+			<div class="page-header">
+				<h1><i style="margin-right:5px;" class="icon-time"></i><a href="#">journal / 2012-03-19</a></h1>
+			</div>
+            
+			<table>
+				<tr>
+					<td class="journal-time">+10m</td><td class="journal-entry">This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</td>
+				</tr>
+				<tr>
+					<td class="journal-time">+15m</td><td class="journal-entry">Edited: <a href="#"><i class="icon-file"></i> code/jboss-as/UserTransaction.java</a></td>
+				</tr>
+				<tr>
+					<td class="journal-time">18:00</td><td class="journal-entry">This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</td>
+				</tr>
+				
+				<tr>
+					<td></td>
+					<td class="journal-entry">
+						<form class="form-stacked">
+						<div class="controls">
+							<textarea class="input-xlarge" id="postedentry"></textarea>
+							<p class="help-block">A few notes, ideas or links</p>
+						</div>
+						<a href="#" class="btn btn-primary btn-large"><i class="icon-edit"></i> Post</a></td>
+						</form>
+				</td>
+			</table>
+			
+			
+			
+        </div>
+		
+		<div class="span3">
+			<div class="row-fluid">
+				<div class="well">
+					<h2><i class="icon-signin"></i>incoming</h2>
+					<ul class="nav">
+						<li><a href="#">hello-world</a></li>
+						<li><a href="#">code/jboss-as/UserTransactions.java</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="well">
+					<h2><i class="icon-tags"></i>tags</h2>
+					<ul class="nav">
+						<li><a href="#"><span class="label label-inverse">jboss-as7<span></a></li>
+						<li><a href="#"><span class="label label-inverse">oracle</span></a></li>
+						<li><a href="#"><span class="label label-inverse">jta</span></a></li>
+						<li><a href="#"><span class="label">journal</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="well">
+					  <h2><i class="icon-signout"></i>outgoing</h2>
+					  <ul class="nav">
+							<li><a href="#">journal/2012-01-15</a></li>
+							<li><a href="#">journal/2012-02-01</a></li>
+							<li><a href="#">code/jboss-as/oracle-datasource.xml</a></li>
+							<li><a href="#">code/jboss-as/UserTransactions.java</a></li>
+						</ul>
+				</div>
+		  </div>
+	  </div>
+      <hr>
+
+      <footer>
+        <p>started in 2012</p>
+      </footer>
+
+    </div>
+	
+    <script src="jquery/jquery.js"></script>
+	<script type="text/javascript" src="sh/scripts/shCore.js"></script>
+	<script type="text/javascript" src="sh/scripts/shLegacy.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushAppleScript.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushAS3.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushBash.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushColdFusion.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushCpp.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushCSharp.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushDelphi.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushDiff.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushErlang.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushGroovy.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushJavaFx.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushPerl.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushPhp.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushPlain.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushPowerShell.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushPython.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushRuby.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushSass.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushScala.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushSql.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushVb.js"></script>
+	<script type="text/javascript" src="sh/scripts/shBrushXml.js"></script>
+
+	<script type="text/javascript">
+		 SyntaxHighlighter.all();
+	</script>
+  </body>
+</html>
